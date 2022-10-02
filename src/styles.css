@@ -1,1 +1,237 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #f8fafb;
+    padding-bottom: .5em;
+    letter-spacing: .1em;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: #f8fafb;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1.5em;
+    letter-spacing: .1em;
+    -webkit-box-reflect: below -3.2em linear-gradient(transparent, #f8fafb);
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    color: #054F77;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #fad409 0%,
+        #054F77 30%,
+        #78bf98 70%,
+        #054F77 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 10% auto;
+    color: #f8fafb;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1s linear;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    color: #f8fafb;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 120%;
+}
+
+section{
+    background: #f8fafb;
+	background: -moz-linear-gradient(#f8fafb, #d8dfe5);
+	background: -webkit-linear-gradient(#f8fafb, #d8dfe5);
+	background: -o-linear-gradient(#f8fafb, #d8dfe5);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    padding: 3em 5em;
+}
+
+.information div{
+    padding: 0 1.2em;
+}
+
+.information div p{
+    margin: 0 auto 1em auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #054F77;
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: .1rem;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+span{
+    font-weight: normal;
+}
+
+.organization{
+    border-radius: 3.125em;
+}
+
+.add-remove{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-bottom: 2em;
+}
+
+.add{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1em;
+}
+
+.add:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.edit{
+    width: 2rem;
+    height: 2rem;
+}
+
+.edit:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.remove{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 3.2em;
+}
+
+.remove:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.edition{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+hr{
+    background: #8c949e;
+}
+
+.box .skill:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3em;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box div{
+    display: flex;
+    flex-direction: column;
+    margin: .2em 0;
+}
+
+.box div label{
+    margin: .2em 0;
+    color: #054F77;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.box div select{
+    margin: .2em 0;
+    color: #054F77;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 2.5em;
+    padding: .5em;
+}
+
+.grid p{
+    font-family: 'Open Sans', sans-serif;
+    color: #054F77;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 17.5em){
+    h3{
+        font-size: 1.8rem;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box div select{
+        max-width: 80%;
+        margin: auto;    
+    }
+
+    .box div label{
+        margin-left: 2.6em;
+    }
+}
+
+@media screen and (min-width: 18em) and (max-width: 37.5em){
+    
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box div select{
+        max-width: 80%;
+        margin: auto;    
+    }
+
+    .box div label{
+        margin-left: 2.6em;
+    }
+}

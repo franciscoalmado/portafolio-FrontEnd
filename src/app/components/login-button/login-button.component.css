@@ -1,0 +1,149 @@
+a{
+    text-decoration: none;
+    color: #f8fafb;
+}
+
+#login{
+    width: 6em;
+    height: 3em;
+    cursor: pointer;
+    background-color: #1a73e8;
+    font-size: 0.9rem;
+    padding: 0.8em 1.6em;
+    color: #f8fafb;
+    border: none;
+    border-radius: .4em;
+    text-align: center;
+    line-height: 300%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#login:hover{
+    background-color: #78bf98;
+    color: #f8fafb;
+    transition: .7s;
+}
+
+aside h4{
+    font-family: 'Open Sans', sans-serif;
+    padding: .3em 0;
+    font-size: 1.2em;
+    color: #054F77;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+aside p{
+    font-family: 'Open Sans', sans-serif;
+    padding: .1em 0 .5em 0;
+    font-size: 1em;
+    color: #054F77;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 0;
+}
+
+#label{
+    font-family: 'Open Sans', sans-serif;
+    padding: 1.2em;
+    color: #054F77;
+    font-weight: bold;
+    text-align: start;
+}
+
+.container label::placeholder{
+	font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1em;
+}
+
+.container input{
+    width: 90%;
+    height: 2.5em;
+    padding: .5em;
+}
+
+#get-into{
+    width: 8em;
+    height: 3em;
+    cursor: pointer;
+    background-color: #1a73e8;
+    font-size: .9rem;
+    color: #f8fafb;
+    border: none;
+    border-radius: .4em;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#get-into:hover{
+    background-color: #78bf98;
+    color: #f8fafb;
+    transition: .7s;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: 'Open Sans', sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(77,77,78,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 25em;
+	position: relative;
+	margin: 10% auto;
+	padding: .3125em 1.25em 0.8125em 1.25em;
+	border-radius: 10px;
+	background: #f8fafb;
+	background: -moz-linear-gradient(#f8fafb, #6a6981);
+	background: -webkit-linear-gradient(#f8fafb, #6a6981);
+	background: -o-linear-gradient(#f8fafb, #6a6981);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.close {
+	background: #6a6981;
+	color: #f8fafb;
+	line-height: 1.5625em;
+	position: absolute;
+	right: -.75em;
+	text-align: center;
+	top: -.625em;
+	width: 1.5em;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: .75em;
+	-moz-border-radius: .75em;
+	border-radius: .75em;
+	-moz-box-shadow: .0625em .0625em .1875em #202124;
+	-webkit-box-shadow: .0625em .0625em .1875em #202124;
+	box-shadow: .0625em .0625em .1875em #202124;
+}
+
+.close:hover{
+    background: #00d9ff; 
+}

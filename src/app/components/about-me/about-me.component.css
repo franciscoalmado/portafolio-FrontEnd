@@ -1,0 +1,78 @@
+.about-me{
+    background-color: #62627f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 5em 2em 5em;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.user div h1{
+    text-align: center;
+}
+
+.user div p{
+    text-align: center;
+}
+
+#photo{
+    width: 6rem;
+    height: 6rem;
+}
+
+.about-me p{
+    font-family: 'Open Sans', sans-serif;
+    color: #f8fafb;
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: .1rem;
+    line-height: 120%;
+}
+
+.description{
+    padding: 0 2.5em;
+}
+
+@media screen and (max-width: 17.5em){
+    .about-me {
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+
+    .about-me p{
+        font-size: 0.7rem;
+        padding: 1em 1em;
+        letter-spacing: .1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        -webkit-box-reflect: below -4.0em linear-gradient(transparent, #f8fafb);
+        padding: 2em 1em;
+    }
+}
+
+@media screen and (min-width: 18em) and (max-width: 37.5em){
+    .about-me {
+        flex-direction: column;
+        padding: 1em 1em;
+    }
+
+    .about-me p{
+        padding: 1em 1em;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        -webkit-box-reflect: below -4.0em linear-gradient(transparent, #f8fafb);
+        padding: 2em 1em;
+    }
+}

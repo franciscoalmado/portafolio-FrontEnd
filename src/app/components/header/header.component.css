@@ -1,0 +1,22 @@
+.navegation{
+    background-color: #202124;
+    border: .1em solid #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em .7em 0.5em 0.2em;
+}
+
+@media screen and (max-width: 17.5em){
+    .navegation {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 18em) and (max-width: 37.5em){
+    .navegation {
+        justify-content: center;
+    }
+}

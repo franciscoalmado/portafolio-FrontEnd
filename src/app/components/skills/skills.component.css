@@ -1,0 +1,42 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 6em 6em 6em;
+    grid-template-rows: 4em 4em 4em 4em;
+    grid-gap: 5em;
+    justify-content: space-around;
+    padding-top: 2.5em;
+}
+
+.wrapper img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 17.5em){
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper img{
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 18em) and (max-width: 37.5em){
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper img{
+        width: 30%;
+        margin: auto;
+    }
+}
