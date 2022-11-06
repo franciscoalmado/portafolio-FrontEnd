@@ -1,0 +1,25 @@
+<div class="nuevo"> 
+    <div class="box-nuevo"> 
+        <h4>Nuevo Idioma</h4>
+        <p>Agregá un nuevo idioma al Portfolio Web</p>
+        <form (ngSubmit)="onCreate()" novalidate>
+            <div class="container">
+                <label id="label" for="idioma">Idioma</label>
+                <select name="idioma" id="idioma" multiple>
+                    <option *ngFor="let idioma of listIdiomas" [value]="idioma.text" (click)="getIdiomas(idioma.text)">{{idioma.text}}</option>
+                </select>
+                <input type="text" id="language" name="language" placeholder="Idioma seleccionado" [(ngModel)]="nombre" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="nivel">Nivel</label>
+                <select name="nivel" id="nivel" multiple>
+                    <option *ngFor="let nivel of listNivelDeIdiomas" [value]="nivel.text" (click)="getNiveles(nivel.text)">{{nivel.text}}</option>
+                </select>
+                <input type="text" id="level" name="level" placeholder="Nivel seleccionado" [(ngModel)]="nivelDeIdioma" required/>
+            </div>          
+            <div class="container">
+                <button type="submit" value="submit" id="get-into">Agregar</button>
+            </div>
+        </form>
+    </div>
+</div>

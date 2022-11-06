@@ -1,9 +1,16 @@
 <nav>
     <ul>
-        <li><a href="https://github.com/franciscoalmado" title="Github" target="_blank"><img class="rrss" src="../../../assets/img/github.png" alt="Github"/></a></li>
-        <li><a href="https://ar.linkedin.com/in/franciscoalmado" title="LinkedIn" target="_blank"><img class="rrss" src="../../../assets/img/linkedin.png" alt="LinkedIn"/></a></li>
-        <li><a href="https://twitter.com/falmado" title="Twitter" target="_blank"><img class="rrss" src="../../../assets/img/twitter.png" alt="Twitter"/></a></li>
-        <li><a href="https://www.instagram.com/fjalmado/" title="Instagram" target="_blank"><img class="rrss" src="../../../assets/img/instagram.png" alt="Instagram"/></a></li>
-        <app-login-button></app-login-button>
+        <li><a href="https://github.com/franciscoalmado" title="Github" target="_blank"><img class="rrss"
+                    src="../../../assets/img/github.png" alt="Github" /></a></li>
+        <li><a href="https://ar.linkedin.com/in/franciscoalmado" title="LinkedIn" target="_blank"><img class="rrss"
+                    src="../../../assets/img/linkedin.png" alt="LinkedIn" /></a></li>
+        <li><a href="https://twitter.com/falmado" title="Twitter" target="_blank"><img class="rrss"
+                    src="../../../assets/img/twitter.png" alt="Twitter" /></a></li>
+        <li><a href="https://www.instagram.com/fjalmado/" title="Instagram" target="_blank"><img class="rrss"
+                    src="../../../assets/img/instagram.png" alt="Instagram" /></a></li>
     </ul>
+    <div class="button">
+        <button ng-hide="isLogged" type="button" id="login" (click)="login()" *ngIf="!isLogged">Login</button>
+        <button ng-hide="!isLogged" type="button" id="login" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
+    </div>
 </nav>

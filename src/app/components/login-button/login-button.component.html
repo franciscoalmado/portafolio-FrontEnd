@@ -1,24 +1,21 @@
-<a id="login" href="#openModal">Login</a>
-
-<aside>
-    <div id="openModal" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <h4>Ingresar al sistema</h4>
-            <p>Para activar la edición del Portfolio Web</p>
-            <form action="#" method="post">
+<div class="login">
+    <div class="modal">
+        <h4>Ingresar al sistema</h4>
+        <p>Para activar la edición del Portfolio Web</p>
+        <form (ngSubmit)="onLogin()" novalidate>
+            <div class="container">
                 <label id="label" for="username">Username</label>
-                <div class="container">
-                    <input type="text" name="username" id="username" placeholder="Username">
-                </div>
+                <input type="text" name="username" id="username" placeholder="Username" [(ngModel)]="username"
+                    required />
+            </div>
+            <div class="container">
                 <label id="label" for="password">Password</label>
-                <div class="container">
-                    <input type="password" name="password" id="password" placeholder="Password">
-                </div>
-                <div class="container">
-                    <button type="submit" id="get-into">Ingresar</button>
-                </div>
-            </form>
-        </div>
+                <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="password"
+                    required />
+            </div>
+            <div class="container">
+                <button type="submit" id="get-into">Ingresar</button>
+            </div>
+        </form>
     </div>
-</aside>
+</div>

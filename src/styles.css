@@ -93,12 +93,24 @@ section{
     font-weight: bold;
 }
 
+.data{
+    width: 80%;
+    height: auto;
+}
+
 span{
     font-weight: normal;
 }
 
 .organization{
     border-radius: 3.125em;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 3em;
 }
 
 .add-remove{
@@ -111,7 +123,8 @@ span{
 .add{
     width: 2rem;
     height: 2rem;
-    margin-right: 1em;
+    margin-right: 3.2em;
+    cursor: pointer;
 }
 
 .add:hover{
@@ -122,6 +135,7 @@ span{
 .edit{
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
 
 .edit:hover{
@@ -132,7 +146,8 @@ span{
 .remove{
     width: 2rem;
     height: 2rem;
-    margin-right: 3.2em;
+    margin: 0 2.5em 0 2em;
+    cursor: pointer;
 }
 
 .remove:hover{
@@ -141,8 +156,10 @@ span{
 }
 .edition{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: top;
+    width: 20%;
+    height: auto;
 }
 
 hr{

@@ -1,0 +1,137 @@
+.nueva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background: rgb(98, 98, 127, 0.3);
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+.box-nueva{
+    width: 60%;
+    height: auto;
+    margin: 3em auto;
+	background: #62627f;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    padding: .3em 0;
+    font-size: 1.2em;
+    color: #f8fafb;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    padding: 1em 1em;
+    font-size: 1em;
+    color: #f8fafb;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 0;
+}
+
+#label{
+    font-family: 'Open Sans', sans-serif;
+    color: #f8fafb;
+    font-weight: bold;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+.container label::placeholder{
+	font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1em;
+}
+
+.container input{
+    width: 90%;
+    height: 2.5em;
+    padding: .5em;
+}
+
+.container textarea{
+    width: 90%;
+    height: auto;
+    padding: .5em;
+    resize: none;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1em;    
+    font-weight: bold;
+}
+
+#get-into{
+    width: 90%;
+    height: auto;
+    cursor: pointer;
+    background-color: #1a73e8;
+    font-size: 1rem;
+    color: #f8fafb;
+    border: none;
+    border-radius: .4em;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1em 0;
+    margin: auto;   
+}
+
+#get-into:hover{
+    background-color: #78bf98;
+    color: #f8fafb;
+    transition: .7s;
+}
+
+
+@media screen and (min-width: 1em) and (max-width: 23.99em){
+
+    .nueva {
+        height: 170vh;
+    }
+}
+
+@media screen and (min-width: 24em) and (max-width: 32.99em){
+
+    .nueva {
+        height: 120vh;
+    }
+}
+
+@media screen and (min-width: 33em) and (max-width: 47.99em){
+
+    .nueva {
+        height: 130vh;
+    }
+}
+
+@media screen and (min-width: 48em) and (max-width: 63.99em){
+
+    .nueva {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 64em) and (max-width: 79.99em){
+
+    .nueva {
+        height: 150vh;
+    }
+}
+
+@media screen and (min-width: 80em){
+
+    .nueva {
+        height: 110vh;
+    }
+}

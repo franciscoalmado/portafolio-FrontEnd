@@ -1,0 +1,30 @@
+<div class="editar" *ngIf="proyecto"> 
+    <div class="box-editar">
+        <h4>Editar Proyecto</h4>
+        <p>Puedes editar un proyecto que esté en el Portfolio Web</p>
+        <form (ngSubmit)="onUpdate()" novalidate method="put">
+            <div class="container">
+                <label id="label" for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Proyecto" [(ngModel)]="proyecto.nombre" required/>
+            </div> 
+            <div class="container">
+                <label id="label" for="tecnologias">Tecnologías</label>
+                <select name="tecnologias" id="tecnologias" multiple>
+                    <option *ngFor="let tech of listTechs" [value]="tech.text" (click)="getTechsValue(tech.text)">{{tech.text}}</option>
+                </select>
+                <input type="text" id="tech" name="tecnologias" placeholder="Tecnologías seleccionadas" [(ngModel)]="proyecto.tecnologias" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="periodo">Período</label>
+                <input type="text" id="periodo" name="periodo" placeholder="Período" [(ngModel)]="proyecto.periodo" required/>
+            </div>
+            <div class="container"> 
+                <label id="label" for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="5" placeholder="Descripción" [(ngModel)]="proyecto.descripcion"></textarea>
+            </div>
+            <div class="container">
+                <button type="submit" value="submit" id="get-into">Agregar</button>
+            </div>
+        </form>
+    </div>
+</div>

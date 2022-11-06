@@ -1,89 +1,19 @@
 <section>
-    <h3>Proyectos</h3>
+    <h3>Proyectos</h3> 
     <div class="add-remove">
-        <a href="#"><img class="add" src="../../../assets/img/add.png" alt="Agregar"></a>
-        <a href="#"><img class="remove" src="../../../assets/img/remove.png" alt="Eliminar"></a>
+        <a [routerLink]="['nuevo-proyecto']" *ngIf="isLogged"><img class="add" src="../../../assets/img/add.png" alt="Agregar"></a>
     </div>
-    <article> 
+    <article *ngFor="let Proyecto of proyecto"> 
         <div class="information">
-            <div>
-                <p>Proyecto:
-                    <a id="details" href="https://github.com/franciscoalmado/intro-plataforma-5" target="_blank" title="FullStack Java">FrontEnd</a>
-                </p>
-                <p>Tecnologías:<span> HTML5, CSS3, JavaScript vanilla, jQuery, API</span></p>
-                <p>Período:<span> junio 2022</span></p>
-                <p>Descripción:
-                    <span>
-                        contiene el desarrollo de un Portafolio Profesional para mostrar todos los proyectos integradores del curso. 
-                    Además, se crea un juego llamado Color Game en el que el usuario deberá adivinar un color a partir de su código RGB. Se muestra un código RGB 
-                    y opciones posibles para que el usuario adivine cuál es la correcta. El usuario podrá jugar en dos niveles: el fácil (con 3 colores) o el difícil (con 6). 
-                    En cualquier caso, el juego le permitirá hacer click en todas las opciones hasta que dé con la correcta. También, se crea una aplicación web 
-                    llamada To Do List para que el usuario pueda realizar una lista de tareas. Por último, se estructura un sitio para mostrar las condiciones 
-                    meteorológicas de una ciudad, según lo especifique el usuario. Para ello, se interactua con la API del Weather Channel.
-                    </span>
-                </p>
+            <div class="data">
+                <p>Proyecto: <span id="details">{{Proyecto.nombre}}</span></p>
+                <p>Tecnologías: <span>{{Proyecto.tecnologias}}</span></p>
+                <p>Período: <span>{{Proyecto.periodo}}</span></p>
+                <p>Descripción: <span>{{Proyecto.descripcion}}</span></p>
             </div>
             <div class="edition">
-                <a href="#"><img class="edit" src="../../../assets/img/edit.png" alt="Editar"></a>
-            </div>
-        </div>
-    </article>
-    <article> 
-        <div class="information">
-            <div>
-                <p>Proyecto:
-                    <a id="details" href="https://github.com/franciscoalmado/codo-a-codo" target="_blank" title="FullStack Java">Java Web</a>
-                </p>
-                <p>Tecnologías:<span> HTML5, CSS3, Bootstrap, Javascript, Java, MySQL</span></p>
-                <p>Período:<span> noviembre 2021</span></p>
-                <p>Comentarios:<span>
-                    el contenido mostrado forma parte del desarrollo del curso Full Stack Java 2021 del Programa Codo a Codo. Contiene actividades 
-                    obligatorias, desafíos, trabajos prácticos integradores y ejercicios desarrollados durante cada clase.
-                    </span> 
-                </p>
-            </div>
-            <div class="edition">
-                <a href="#"><img class="edit" src="../../../assets/img/edit.png" alt="Editar"></a>
-            </div>
-        </div>
-    </article>
-    <article> 
-        <div class="information">
-            <div>
-                <p>Proyecto:
-                    <a id="details" href="https://github.com/franciscoalmado/python" target="_blank" title="Proyectos Python">Python</a>
-                </p>
-                <p>Tecnologías:<span> Python</span></p>
-                <p>Período:<span> octubre 2021</span></p>
-                <p>Comentarios:
-                    <span>
-                        el contenido mostrado forma parte del desarrollo del curso Programación en Python, 2do cuatrimestre 2021, 
-                        Centro Universitario Vicente López.
-                    </span>
-                </p>
-            </div>
-            <div class="edition">
-                <a href="#"><img class="edit" src="../../../assets/img/edit.png" alt="Editar"></a>
-            </div>
-        </div>
-    </article>
-    <article> 
-        <div class="information">
-            <div>
-                <p>Proyecto:
-                    <a id="details" href="https://github.com/franciscoalmado/unlam-pb1" target="_blank" title="Proyectos Java">Java</a>
-                </p>
-                <p>Tecnologías:<span> Java</span></p>
-                <p>Período: <span> septiembre 2021</span></p>
-                <p>Comentarios: 
-                    <span>
-                        el contenido mostrado forma parte de la cursada de Programación Básica I, Universidad Nacional 
-                        de La Matanza, 2do cuatrimestre 2021.
-                    </span>
-                </p>
-            </div>
-            <div class="edition">
-                <a href="#"><img class="edit" src="../../../assets/img/edit.png" alt="Editar"></a>
+                <a [routerLink]="['editar-proyecto', Proyecto.id]" *ngIf="isLogged"><img class="edit" src="../../../assets/img/edit.png" alt="Editar"></a>
+                <a (click)="delete(Proyecto.id)" *ngIf="isLogged"><img class="remove" src="../../../assets/img/remove.png" alt="Eliminar"></a>
             </div>
         </div>
     </article>

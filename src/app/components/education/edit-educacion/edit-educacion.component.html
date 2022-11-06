@@ -1,0 +1,27 @@
+<div class="editar" *ngIf="educacion">
+    <div class="box-editar">
+        <h4>Actualizar Educación</h4>
+        <p>Puedes editar una educación que esté en el Portfolio Web</p>
+        <form (ngSubmit)="onUpdate()" novalidate>
+            <div class="container">
+                <label id="label" for="institucion">Institucion</label>
+                <input type="text" id="institucion" name="institucion" placeholder="Institucion" [(ngModel)]="educacion.institucion" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="carrera">Carrera</label>
+                <input type="text" id="carrera" name="carrera" placeholder="Carrera" [(ngModel)]="educacion.carrera" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="periodo">Período</label>
+                <input type="text" id="periodo" name="periodo" placeholder="Período" [(ngModel)]="educacion.periodo" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="comentarios">Comentarios</label> 
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Comentarios" [(ngModel)]="educacion.comentarios" required></textarea>
+            </div>
+            <div class="container">
+                <button type="submit" value="submit" id="get-into">Actualizar</button>
+            </div>
+        </form>
+    </div>
+</div>

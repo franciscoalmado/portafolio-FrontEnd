@@ -1,0 +1,27 @@
+<div class="editar" *ngIf="experienciaLaboral">
+    <div class="box-editar"> 
+        <h4>Editar Experiencia Laboral</h4>
+        <p>Puedes editar una experiencia laboral que esté en el Portfolio Web</p>
+        <form (ngSubmit)="onUpdate()" novalidate method="put">
+            <div class="container">
+                <label id="label" for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Empresa" [(ngModel)]="experienciaLaboral.empresa" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="cargo">Cargo</label>
+                <input type="text" id="cargo" name="cargo" placeholder="Cargo" [(ngModel)]="experienciaLaboral.cargo" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="periodo">Período</label>
+                <input type="text" id="periodo" name="periodo" placeholder="Período" [(ngModel)]="experienciaLaboral.periodo" required/>
+            </div>
+            <div class="container">
+                <label id="label" for="funciones">Funciones</label>
+                <textarea name="funciones" id="funciones" cols="30" rows="5" placeholder="Funciones" [(ngModel)]="experienciaLaboral.funciones" required></textarea>
+            </div>
+            <div class="container">
+                <button type="submit" value="submit" id="get-into">Actualizar</button>
+            </div>
+        </form>
+    </div>
+</div>

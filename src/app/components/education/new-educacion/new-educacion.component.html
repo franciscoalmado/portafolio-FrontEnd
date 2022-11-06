@@ -1,0 +1,27 @@
+<div class="nueva">
+    <div class="box-nueva">
+        <h4>Nueva Educación</h4>
+        <p>Agregá una nueva educación al Portfolio Web</p>
+        <form (ngSubmit)="onCreate()" novalidate>
+            <div class="container">
+                <label id="label" for="institucion">Institucion</label>
+                <input type="text" id="institucion" name="institucion" placeholder="Institucion" [(ngModel)]="institucion" required=""/>
+            </div>
+            <div class="container">
+                <label id="label" for="carrera">Carrera</label>
+                <input type="text" id="carrera" name="carrera" placeholder="Carrera" [(ngModel)]="carrera" required=""/>
+            </div>
+            <div class="container">
+                <label id="label" for="periodo">Período</label>
+                <input type="text" id="periodo" name="periodo" placeholder="Período" [(ngModel)]="periodo" required=""/>
+            </div>
+            <div class="container">
+                <label id="label" for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Comentarios" [(ngModel)]="comentarios" required=""></textarea>
+            </div>
+            <div class="container">
+                <button type="submit" value="submit" id="get-into">Agregar</button>
+            </div>
+        </form>
+    </div>
+</div>

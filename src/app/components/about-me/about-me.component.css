@@ -37,10 +37,6 @@
     line-height: 120%;
 }
 
-.description{
-    padding: 0 2.5em;
-}
-
 @media screen and (max-width: 17.5em){
     .about-me {
         flex-direction: column;
